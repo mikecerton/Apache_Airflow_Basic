@@ -1,7 +1,7 @@
 
 # Apache_Airflow_Tutorial
 
-&emsp;This repository offers an easy-to-follow guide on Apache Airflow, explaining the basics of creating, running, and managing data pipelines.
+&emsp;This repository provides an easy guide on Apache Airflow, explaining how to create, run, and manage data pipelines. It includes steps for installing Airflow using Docker, making the setup easier. The guide also covers basic concepts like DAGs (Directed Acyclic Graphs), which show workflows, and operators that define tasks in those workflows.
 
 ### Basic components of Airflow
 <img src="https://fueled.com/the-cache/posts/backend/devops/mlops-with-airflow2/dag-task-operator.png" alt="diagram" width="600" />
