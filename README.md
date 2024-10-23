@@ -1,7 +1,7 @@
 
 # Apache_Airflow_Tutorial
 
-&emsp;This repository contains a comprehensive guide to get started with Apache Airflow. It includes step-by-step instructions, code examples.
+&emsp;This repository offers an easy-to-follow guide on Apache Airflow, explaining the basics of creating, running, and managing data pipelines.
 
 ### install Apache Airflow using docker
 
