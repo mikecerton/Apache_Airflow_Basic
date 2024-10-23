@@ -5,6 +5,7 @@
 
 ### Basic components of Airflow
 <img src="https://fueled.com/the-cache/posts/backend/devops/mlops-with-airflow2/dag-task-operator.png" alt="diagram" width="600" />
+picture from https://fueled.com/the-cache/posts/backend/devops/mlops-with-airflow2/dag-task-operator.png
 
 
 #### 1. Directed Acyclic Graph (DAG):
