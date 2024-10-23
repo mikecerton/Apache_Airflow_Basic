@@ -5,7 +5,7 @@
 
 ### install Apache Airflow using docker
 
-1. Check that your Docker has more than X GB of RAM.
+1. Check that your Docker has more than 4 GB of RAM.
 ```bash
   docker run --rm "debian:bookworm-slim" bash -c "numfmt --to iec $(echo $(($(getconf _PHYS_PAGES) * $(getconf PAGE_SIZE))))"
 ```
