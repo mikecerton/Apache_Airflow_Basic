@@ -8,10 +8,10 @@
 picture from https://fueled.com/the-cache/posts/backend/devops/mlops-with-airflow2/dag-task-operator.png
 
 
-**1. Directed Acyclic Graph (DAG):**
+#### 1. Directed Acyclic Graph (DAG):
 A DAG is a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies. The DAG is "directed" because the tasks must be run in a specific order, and it's "acyclic" because it doesn't contain any cycles, meaning a task can’t depend on itself either directly or indirectly. In Airflow, DAGs define how tasks are scheduled and triggered, but the DAG itself does not perform any actions.<br>
-Key Point: A DAG defines the structure and flow of tasks but doesn't execute them directly.<br>
-**2. Task:**<br>
+Key Point: A DAG defines the structure and flow of tasks but doesn't execute them directly.
+#### 2. Task:
 A task is a single unit of work within a DAG. Each task represents a specific operation, such as pulling data from a database, processing data, or sending an email notification. In Airflow, a task is defined by an Operator and can be subject to scheduling, retry logic, and other runtime behaviors.<br>
 Key Point: Tasks are the individual pieces of work within a DAG.
 #### 3. Operator:
