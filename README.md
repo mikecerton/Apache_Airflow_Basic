@@ -104,5 +104,9 @@ curl -X GET  \
     --user "airflow:airflow" \
     "${ENDPOINT_URL}/api/v1/pools"
 ```
+### Disclaimer
+ - https://www.youtube.com/watch?v=K9AnJ9_ZAXE&list=PLwFJcsJ61oujAqYpMp1kdUBcPG0sE0QMT
+ - https://airflow.apache.org/docs/apache-airflow/stable/index.html
+
 
 
