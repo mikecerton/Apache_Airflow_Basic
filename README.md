@@ -8,10 +8,10 @@
 picture from https://fueled.com/the-cache/posts/backend/devops/mlops-with-airflow2/dag-task-operator.png
 
 
-#### 1. Directed Acyclic Graph (DAG):
+**1. Directed Acyclic Graph (DAG):**
 A DAG is a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies. The DAG is "directed" because the tasks must be run in a specific order, and it's "acyclic" because it doesn't contain any cycles, meaning a task can’t depend on itself either directly or indirectly. In Airflow, DAGs define how tasks are scheduled and triggered, but the DAG itself does not perform any actions.<br>
-Key Point: A DAG defines the structure and flow of tasks but doesn't execute them directly.
-#### 2. Task:
+Key Point: A DAG defines the structure and flow of tasks but doesn't execute them directly.<br>
+**2. Task:**<br>
 A task is a single unit of work within a DAG. Each task represents a specific operation, such as pulling data from a database, processing data, or sending an email notification. In Airflow, a task is defined by an Operator and can be subject to scheduling, retry logic, and other runtime behaviors.<br>
 Key Point: Tasks are the individual pieces of work within a DAG.
 #### 3. Operator:
@@ -72,6 +72,32 @@ docker-compose up
 7. Install Apache Airflow python library using
 ```bash
 pip install apache-airflow
+```
+### Accessing the Environment
+After starting Airflow, you can interact with it in three ways:
+
+1. Via a browser using the web interface.
+2. By using the REST API.
+3. By running CLI commands.
+
+#### 1. Accessing the Web Interface
+
+The webserver is available at [http://localhost:8080](http://localhost:8080). The default login credentials are:
+- **Username:** airflow
+- **Password:** airflow
+
+#### 2. Sending Requests to the REST API
+
+The webserver is also available at [http://localhost:8080](http://localhost:8080). The default login credentials are:
+- **Username:** airflow
+- **Password:** airflow
+
+**Example command to send a request to the REST API:**
+```bash
+ENDPOINT_URL="http://localhost:8080/"
+curl -X GET  \
+    --user "airflow:airflow" \
+    "${ENDPOINT_URL}/api/v1/pools"
 ```
 
 
