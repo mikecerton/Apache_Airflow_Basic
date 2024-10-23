@@ -3,7 +3,7 @@
 
 &emsp;This repository offers an easy-to-follow guide on Apache Airflow, explaining the basics of creating, running, and managing data pipelines.
 
-### Basic component of Airflow
+### Basic components of Airflow
 
 ##### 1. Directed Acyclic Graph (DAG):
 A DAG is a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies. The DAG is "directed" because the tasks must be run in a specific order, and it's "acyclic" because it doesn't contain any cycles, meaning a task can’t depend on itself either directly or indirectly. In Airflow, DAGs define how tasks are scheduled and triggered, but the DAG itself does not perform any actions.<br>
@@ -23,7 +23,7 @@ SequentialExecutor: Runs tasks one by one.<br>
 LocalExecutor: Runs tasks in parallel on the local machine.<br>
 Key Point: The executor determines how tasks are distributed and executed across resources.
 
-### install Apache Airflow using docker
+### Install Apache Airflow using Docker
 
 1. Check that your Docker has more than 4 GB of RAM.
 ```bash
