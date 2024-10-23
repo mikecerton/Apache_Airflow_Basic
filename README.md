@@ -3,10 +3,9 @@
 
 &emsp;This repository provides an easy guide on Apache Airflow, explaining how to create, run, and manage data pipelines. It includes steps for installing Airflow using Docker, making the setup easier. The guide also covers basic concepts like DAGs (Directed Acyclic Graphs), which show workflows, and operators that define tasks in those workflows.
 
-### Basic components of Airflow
+### Basic concepts of Airflow
 <img src="https://fueled.com/the-cache/posts/backend/devops/mlops-with-airflow2/dag-task-operator.png" alt="diagram" width="600" />
 picture from https://fueled.com/the-cache/posts/backend/devops/mlops-with-airflow2/dag-task-operator.png
-
 
 #### 1. Directed Acyclic Graph (DAG):
 A DAG is a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies. The DAG is "directed" because the tasks must be run in a specific order, and it's "acyclic" because it doesn't contain any cycles, meaning a task can’t depend on itself either directly or indirectly. In Airflow, DAGs define how tasks are scheduled and triggered, but the DAG itself does not perform any actions.<br>
