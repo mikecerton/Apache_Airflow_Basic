@@ -3,6 +3,26 @@
 
 &emsp;This repository offers an easy-to-follow guide on Apache Airflow, explaining the basics of creating, running, and managing data pipelines.
 
+### Basic component of Airflow
+
+##### 1. Directed Acyclic Graph (DAG):
+A DAG is a collection of all the tasks you want to run, organized in a way that reflects their relationships and dependencies. The DAG is "directed" because the tasks must be run in a specific order, and it's "acyclic" because it doesn't contain any cycles, meaning a task can’t depend on itself either directly or indirectly. In Airflow, DAGs define how tasks are scheduled and triggered, but the DAG itself does not perform any actions.<br>
+Key Point: A DAG defines the structure and flow of tasks but doesn't execute them directly.
+##### 2. Task:
+A task is a single unit of work within a DAG. Each task represents a specific operation, such as pulling data from a database, processing data, or sending an email notification. In Airflow, a task is defined by an Operator and can be subject to scheduling, retry logic, and other runtime behaviors.<br>
+Key Point: Tasks are the individual pieces of work within a DAG.
+##### 3. Operator:
+Operators are templates that define what actions a task should perform. Airflow provides different operators for different types of tasks, such as: <br>
+BashOperator: Executes a bash command.<br>
+PythonOperator: Executes a Python function.<br>
+EmailOperator: Sends an email.<br>
+Key Point: An operator defines what action a task will perform.
+##### 4. Executor:
+The executor is responsible for running the tasks defined by the DAG. It defines how and where tasks are executed. There are different types of executors in Airflow, such as:<br>
+SequentialExecutor: Runs tasks one by one.<br>
+LocalExecutor: Runs tasks in parallel on the local machine.<br>
+Key Point: The executor determines how tasks are distributed and executed across resources.
+
 ### install Apache Airflow using docker
 
 1. Check that your Docker has more than 4 GB of RAM.
