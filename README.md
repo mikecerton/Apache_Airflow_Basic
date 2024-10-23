@@ -1,7 +1,7 @@
 
 # Apache_Airflow_Tutorial
 
-This repository contains a comprehensive guide to get started with Apache Airflow. It includes step-by-step instructions, code examples.
+&emsp;This repository contains a comprehensive guide to get started with Apache Airflow. It includes step-by-step instructions, code examples.
 
 ### install Apache Airflow using docker
 
@@ -13,11 +13,11 @@ This repository contains a comprehensive guide to get started with Apache Airflo
 ```bash
 curl -LfO 'https://airflow.apache.org/docs/apache-airflow/2.10.2/docker-compose.yaml'
 ```
-or
+&emsp;&emsp;&emsp;or
 ```bash
 Invoke-WebRequest -Uri 'https://airflow.apache.org/docs/apache-airflow/2.10.2/docker-compose.yaml' -OutFile 'docker-compose.yaml'
 ```
-or 
+&emsp;&emsp;&emsp;or 
 
 just copy text from https://airflow.apache.org/docs/apache-airflow/2.10.2/docker-compose.yaml
 
@@ -30,11 +30,11 @@ mkdir dags, logs, plugins, config
 $AIRFLOW_UID = [System.Security.Principal.WindowsIdentity]::GetCurrent().User.Value
 echo "AIRFLOW_UID=$AIRFLOW_UID" > .env
 ```
-or
+&emsp;&emsp;&emsp;or
 ```bash
 echo "AIRFLOW_UID=50000" > .env
 ```
-or 
+&emsp;&emsp;&emsp;or 
 
 create .env and paste AIRFLOW_UID=50000
 
