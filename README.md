@@ -85,6 +85,10 @@ docker-compose up
 ```bash
 pip install apache-airflow
 ```
+### Special Note
+#### 1. Install python library in Airflow container
+#### 2. copy your file in Airflow container
+
 ### Accessing the Environment
 After starting Airflow, you can interact with it in three ways:
 
