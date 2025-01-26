@@ -87,7 +87,27 @@ pip install apache-airflow
 ```
 ### Special Note
 #### 1. Install python library in Airflow container
-#### 2. copy your file in Airflow container
+you can list python to install in docker-compose.yaml
+```bash
+_PIP_ADDITIONAL_REQUIREMENTS: "${_PIP_ADDITIONAL_REQUIREMENTS:-your_library}"
+# Example
+_PIP_ADDITIONAL_REQUIREMENTS: "${_PIP_ADDITIONAL_REQUIREMENTS:-numpy pandas matplotlib}"
+# you can look at line 69 -79 in docker-compose.yaml in this repository
+```
+#### 2. copy your file to Airflow container
+you use valume key in docker-compose.yaml for copy your file to Airflow container
+```bash
+volumes:
+    - [your_file_path]:[Destination_file_path]
+# Example
+volumes:
+    - ${AIRFLOW_PROJ_DIR:-.}/my_file:/opt/airflow/file_in_container   
+    - ${AIRFLOW_PROJ_DIR:-.}/dags:/opt/airflow/dags
+    - ${AIRFLOW_PROJ_DIR:-.}/logs:/opt/airflow/logs
+    - ${AIRFLOW_PROJ_DIR:-.}/config:/opt/airflow/config
+    - ${AIRFLOW_PROJ_DIR:-.}/plugins:/opt/airflow/plugins
+# you can look at line 69 -79 in docker-compose.yaml in this repository
+```
 
 ### Accessing the Environment
 After starting Airflow, you can interact with it in three ways:
