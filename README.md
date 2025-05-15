@@ -31,6 +31,10 @@ SequentialExecutor: Runs tasks one by one.<br>
 LocalExecutor: Runs tasks in parallel on the local machine.<br>
 Key Point: The executor determines how tasks are distributed and executed across resources.
 
+### Apache Airflow Architecture
+<img src="https://airflow.apache.org/docs/apache-airflow/2.6.0/_images/arch-diag-basic.png" alt="diagram" width="600" />
+picture from https://airflow.apache.org/docs/apache-airflow/2.6.0/_images/arch-diag-basic.png
+
 ### Code Example for Using a DAG
 &emsp; The code example will be in the dags directory, containing files such as:<br>
 - bash_DAG.py : code example for bash operator.<br>
